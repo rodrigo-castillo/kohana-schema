@@ -33,6 +33,10 @@ class Database_Column_String extends Database_Column {
 	
 	public function parameters($set = NULL)
 	{
+		if($this->datatype == 'text') {
+			return array();
+		}
+
 		if ($this->exact)
 		{
 			return array();

@@ -98,7 +98,7 @@ class Database_Query_Builder_Create extends Database_Query_Builder {
 		return $this;
 	}
 	
-	public function compile($db = NULL)
+	public function compile(Database $db = NULL)
 	{
 		$sql = 'CREATE TABLE '.($this->_not_exists ? 'IF NOT EXISTS ' : NULL).$db->quote_table($this->_table).' ';
 		
