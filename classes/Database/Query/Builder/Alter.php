@@ -112,7 +112,7 @@ class Database_Query_Builder_Alter extends Database_Query_Builder {
 		return $this;
 	}
 	
-	public function compile(Database $db = NULL)
+	public function compile($db = NULL)
 	{
 		if ($sql = $this->_compile_add($db))
 		{

@@ -21,7 +21,7 @@ class Database_Query_Builder_Drop extends Database_Query_Builder {
 		parent::__construct(Database::DROP, '');
 	}
 	
-	public function compile(Database $db = NULL)
+	public function compile($db = NULL)
 	{
 		switch($this->_drop_type)
 		{
